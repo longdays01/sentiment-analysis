@@ -1,9 +1,16 @@
-# sentiment-analysis
-**NLP Project** 
-*   Đầu vào: Một câu bình luận tiếng Việt được thu thập từ Tiki, Lazada
-*   Đầu ra: Y ∈ {0; 1; 2} trong đó: Y là nhãn của bình luận, 0 là tiêu cực, 1 là trung tính, 2 là tích cực.
-- **Word Embedding**: Tf-Idf, phoBERT, fastText
-- **Thuật toán**: SVM, Logistic Regression, XGBOOST, Random Forest, LightGBM; RoBERTa
-*   Hướng dẫn cài đặt: 
-1. Sử dụng môi trường Google Colab (thay đổi thành chế độ có hỗ trợ GPU nếu sử dụng thuật toán học sâu)
-2. Thay đổi các đường link dẫn đến folder chứa dữ liệu
+# Sentiment Analysis with LLMs
+
+## Overview  
+This project classifies Vietnamese user comments from e-commerce platforms (Tiki, Lazada) into three sentiment categories: **0**: Negative, **1**: Neutral, **2**: Positive.  
+- **Input**: A Vietnamese comment collected from Tiki or Lazada.  
+- **Output**: Y ∈ {0, 1, 2}, where:    
+
+## Features  
+- **Word Embedding**: Tf-Idf, fastText, phoBERT, RoBERTa  
+- **Models**: SVM, Logistic Regression, XGBoost, Random Forest, LightGBM, RoBERTa  
+- Achieved **F1-score: 80%** on a dataset of 15,000+ comments.
+
+## Setup  
+1. Use **Google Colab** (enable GPU for deep learning models).  
+2. Update dataset file paths in the script.  
+3. Run scripts for preprocessing, training, and evaluation. 
